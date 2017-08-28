@@ -1,50 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
     <link rel="icon" type="image/png" href="img/ikon.png" />
-
     <title>Ian M. Maynard</title>
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
-
 <body>
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">My Vids</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Saved videos</a></li>
-            </ul>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#!" class="brand-logo center">Vids</a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a href="saved.html">Saved</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="#">Saved videos</a></li>
-            </ul>
-            <!-- Side Search bar -->
-
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    <nav>
+        <div class="nav-wrapper">
+            <form>
+                <div class="input-field light-blue">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
         </div>
     </nav>
-    <div class="section no-pad-bot" id="index-banner">
-        <div class="container">
-        </div>
-    </div>
-    <div class="row">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">mode_edit</i>
-                    <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                    <label for="icon_prefix2">Search</label>
-                </div>
-            </div>
-        </form>
-    </div>
-
-
 
     <div class="container">
         <div class="section">
@@ -54,7 +42,7 @@
                     <div class="icon-block">
                         <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
                         <h5 class="center">Card placeholder Card placeholder</h5>
-                        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                        <p class="light">We have provided detailed Documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
                     </div>
                 </div>
 
@@ -78,14 +66,28 @@
         </div>
         <br><br>
     </div>
-    <footer class="page-footer green">
-        <div class="footer-copyright">
-            <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">IanM</a>
-            </div>
-        </div>
-    </footer>
 
+        <footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <!-- <h5 class="white-text">Footer Content</h5> -->
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <!-- <h5 class="white-text">Links</h5> -->
+                <ul>
+                  <!-- <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright -  Ian Maynard
+            <a class="grey-text text-lighten-4 right" href="#!">Saved</a>
+            </div>
+          </div>
+        </footer>
     <!-- Core Scripts reference-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
