@@ -13,10 +13,10 @@ var toolbox = {
 
     return axios.get("https://youtube/vs/search/",{
       params: {
-          "api-key":APIKey,
-          "q":formSearch,
-          "type":"video",
-          maxResults:10
+          "api-key" : APIKey,
+          "q" : formSearch,
+          "type" : "video",
+          maxResults : 10
       }
     })
 .then(function(results){
@@ -33,7 +33,7 @@ getSaved: function() {
         });
 },
 
-postSaved: function(term, url) {
+postSaved: function(term, url,vid) {
     var newVideo = { term: term, url: url};
         return axios.post("/api/saved", newVideo)
             .then(function(response) {
@@ -41,6 +41,23 @@ postSaved: function(term, url) {
                     return response.data._id;
             });
 },
+
+deleteSaved: function(term, url, vid) {
+    return axios.delete("/api/saved", {
+        params: {
+        }
+    })
+    .then(function(results){
+        console.log("axios results ", results);
+        return results;
+        });
+    }
+};
+
+module.exports = toolbox;
+
+
+
                 
 
 
