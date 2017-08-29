@@ -1,7 +1,7 @@
 // React
 var React = require("react");
 var Link = require("react-router").Link;
-var Main = React.crateClass({
+var Main = React.createClass({
 
     render: function () {
         return (
@@ -47,12 +47,10 @@ var Main = React.crateClass({
                                 </div>
                             </div>
                         </footer>
+                    </div>
                 </div>
-                </div>
-
-                );
+            );
         }
     });
        {/* Navbar */}
-
-                module.exports = Main;
+module.exports = Main;

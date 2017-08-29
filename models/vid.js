@@ -5,9 +5,6 @@ var VidSchema = new Schema({
   title: {
     type: String
   },
-  date: {
-    type: Date
-  },
   url: {
     type: String
   },
